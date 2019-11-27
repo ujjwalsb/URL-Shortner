@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+  
+{% block title %}URL Analytics{% endblock %}
+  
+{% block content %}
+
+  <div class="all_link-container">
+    <table id="analytics">
+      <tr>
+        <th>Short Link</th>
+        <th>Main URL</th>
+        <th>Count</th>
+      </tr>
+      {% for link in res %}
+      <tr>
+        <td>{{ base_url }}/{{ link.short_url_id }}</td>
+        <td>{{ link.http_main_url }}</td>
+        <td>{{ link.count }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+
+{% endblock content %}

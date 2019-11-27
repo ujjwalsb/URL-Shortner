@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+  
+{% block title %}URL Shortening Service{% endblock %}
+  
+{% block content %}
+  <div  class="container">
+    <div>
+      <h3>Enter the URL / Link below to be shortened</h3>
+    </div>
+    <div>
+      <input type="text" name="url" id="url" placeholder="eg.: http://www.catfiles.net" autofocus/>
+    </div>
+    <div>
+      {% csrf_token %}
+      <br/>
+      <button id="submitURL" class="btn">Submit</button></p> 
+    </div>
+    <br/>
+    <div>
+      <span id="url-message"></span>
+      <span id="url-result"></span>
+      <a id="copy" onclick="copyDivToClipboard()"></a>
+      
+      <script type="text/javascript">
+        function copyDivToClipboard() {
+          var range = document.createRange();
+          range.selectNode(document.getElementById("url-result"));
+          window.getSelection().removeAllRanges();
+          window.getSelection().addRange(range);
+          document.execCommand("copy")
+        }
+      </script>
+    </div>
+  </div>
+{% endblock content %}
