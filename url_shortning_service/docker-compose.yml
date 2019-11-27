@@ -4,8 +4,8 @@ services:
   web:
     build: .
     command: bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
-    container_name: url_shortner_service
+    container_name: url_shortner
     volumes:
-      - .:/url_shortner_service
+      - .:/url_shortner
     ports:
       - "8000:8000"
