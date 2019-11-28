@@ -89,4 +89,16 @@ To get rid of the logs on the screen and run the project in detached mode **(bac
 **Project Link -** ```http://projectassignment.pythonanywhere.com/```
 
 ---------------
+---------------
+
+**Note:- Please pardon the domain name for the Short URL as it is a free hosting so the short URL may seem long but the short URL is being generated (The main domain is `http://www.projectassignment.pythonanywhere.com/<short_url>`)
+
+If the domain name to be `www.cat.com` the the short URL Link would have been `www.cat.com/<short_url>`
+
+#### If hosted on any other Domain/IP make sure to change `SITE_URL` of the Name/IP in `settings.py` Line no - 43
+
+```(URL-Shortner/url_shortning_service/url_shortning_service/settings.py)```
+
+---------------
+
 
