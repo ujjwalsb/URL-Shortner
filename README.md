@@ -16,6 +16,9 @@
 
 *Admin Link-* [http://projectassignment.pythonanywhere.com/admin](http://projectassignment.pythonanywhere.com/admin/)
 
+`User ID - url`
+`Password - url`
+
 ----------------
 
 **"URL Shortening service is a web application where you can enter any of your long URL/Link and make it short, thus making your Link sharable anywhere and it'll be redirected to your original Domain."**
@@ -57,7 +60,7 @@
     Attaching to url_shortner
     url_shortner | No changes detected
 	url_shortner | Operations to perform:
-	url_shortner |   Apply all migrations: admin, auth, contenttypes, sessions, 			url_shortner
+	url_shortner |   Apply all migrations: admin, auth, contenttypes, sessions, url_shortner
 	url_shortner | Running migrations:
 	url_shortner |   No migrations to apply.
 	url_shortner | Performing system checks...
